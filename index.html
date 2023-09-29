@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technologies Assignments</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin: 10px;
+            flex: 1;
+            max-width: calc(33.33% - 20px); /* Updated width for three cards */
+            overflow: hidden;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .card-buttons button {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .card-buttons button a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .card-buttons button:first-child {
+            margin-right: 10px;
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        .card-buttons button:last-child {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Web Technologies Assignments</h1>
+    </header>
+    <div class="container">
+        <div class="card">
+            <img src="Hammad.jpeg" alt="Image 1">
+            <div class="card-content">
+                <h2>HAMMAD 509</h2>
+                <p>Assignments OF HTML TAGS and WEB FORM ARE HERE!.</p>
+                <div class="card-buttons">
+                    <button onclick="location.href='html tags.html'">Assignment 01</button>
+                    <button onclick="location.href='Hammad Form.html'">Assignment 02</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Sahil.jpeg" alt="Image 2">
+            <div class="card-content">
+                <h2>SAHIL 517</h2>
+                <p>Assignments OF HTML TAGS and WEB FORM ARE HERE!.</p>
+                <div class="card-buttons">
+                    <button><a href="assignment1.html">Assignment 01</a></button>
+                    <button onclick="location.href='2nd fo.html'">Assignment 02</button>
+                </div>
+            </div>
+        </div>
+        <!-- Add a third card here -->
+        <div class="card">
+            <img src="520.jpg" alt="Image 3">
+            <div class="card-content">
+                <h2>Usama 520</h2>
+                <p>Assignments OF HTML TAGS and WEB FORM ARE HERE!.</p>
+                <div class="card-buttons">
+                    <button onclick="location.href='u1.html'">Assignment 01</button>
+                    <button onclick="location.href='Sign up with Validation.html'">Assignment 02</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

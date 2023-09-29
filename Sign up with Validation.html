@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add custom CSS (if needed) -->
+    <style>
+        /* Add inline CSS styles here */
+        body {
+            background-color: #f5f5f5;
+        }
+        .navbar {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .jumbotron {
+            background-color: #fff;
+            text-align: center;
+        }
+        .jumbotron h1 {
+            color: #007bff;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .card {
+            margin-top: 20px;
+        }
+        .validation-alert {
+            color: #f00;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bootstrap navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">WEB FORM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign In</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Bootstrap jumbotron -->
+    <div class="jumbotron">
+        <h1>Welcome to WEB TECHNOLOGIES!</h1>
+        <p>Create your account to get started.</p>
+    </div>
+
+    <!-- Bootstrap form -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="fullName" style="font-weight: bold;">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" required>
+                        <div class="validation-alert" id="fullNameAlert"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" style="font-weight: bold;">Email Address</label>
+                        <input type="email" class="form-control" id="email" required>
+                        <div class="validation-alert" id="emailAlert"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" style="font-weight: bold;">Password</label>
+                        <input type="password" class="form-control" id="password" required>
+                        <div class="validation-alert" id="passwordAlert"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword" style="font-weight: bold;">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmPassword" required>
+                        <div class="validation-alert" id="confirmPasswordAlert"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob" style="font-weight: bold;">Date of Birth</label>
+                        <input type="date" class="form-control" id="dob">
+                    </div>
+                    <div class="form-group">
+                        <label style="font-weight: bold;">Gender</label>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="male" value="Male">
+                                <label class="form-check-label" for="male">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                                <label class="form-check-label" for="female">Female</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="other" value="Other">
+                                <label class="form-check-label" for="other">Other</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="country" style="font-weight: bold;">Country</label>
+                        <select class="form-control" id="country">
+                            <option value="us">United States</option>
+                            <option value="ca">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+
+                    <!-- Additional Input Fields -->
+                    <div class="form-group">
+                        <label for="phoneNumber" style="font-weight: bold;">Phone Number</label>
+                        <input type="tel" class="form-control" id="phoneNumber">
+                        <div class="validation-alert" id="phoneNumberAlert"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address" style="font-weight: bold;">Address</label>
+                        <textarea class="form-control" id="address" rows="3"></textarea>
+                        <div class="validation-alert" id="addressAlert"></div>
+                    </div>
+                    
+                    <!-- Add more input fields as needed -->
+
+                    <button type="submit" class="btn btn-primary" style="background-color: #007bff;">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap card component -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        Additional Information Here
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap and custom JavaScript if needed -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Add custom JavaScript for data validation -->
+    <script>
+        document.querySelector('form').addEventListener('submit', function (e) {
+            let valid = true;
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const phoneNumber = document.getElementById('phoneNumber').value;
+            
+            // Validation for Full Name (No numbers allowed)
+            if (/[\d]/.test(fullName)) {
+                valid = false;
+                document.getElementById('fullNameAlert').innerText = "Name doesn't contain numbers.";
+            } else {
+                document.getElementById('fullNameAlert').innerText = "";
+            }
+
+            // Validation for Email (Must contain @ character)
+            if (!email.includes('@')) {
+                valid = false;
+                document.getElementById('emailAlert').innerText = "Email must contain '@' character.";
+            } else {
+                document.getElementById('emailAlert').innerText = "";
+            }
+
+            // Validation for Password (Add your password validation logic here)
+            if (password.length < 6) {
+                valid = false;
+                document.getElementById('passwordAlert').innerText = "Password should be at least 6 characters long.";
+            } else {
+                document.getElementById('passwordAlert').innerText = "";
+            }
+
+            // Validation for Confirm Password
+            if (password !== confirmPassword) {
+                valid = false;
+                document.getElementById('confirmPasswordAlert').innerText = "Passwords do not match.";
+            } else {
+                document.getElementById('confirmPasswordAlert').innerText = "";
+            }
+
+            // Validation for Phone Number (Add your phone number validation logic here)
+            if (!/^[0-9]+$/.test(phoneNumber)) {
+                valid = false;
+                document.getElementById('phoneNumberAlert').innerText = "Invalid phone number.";
+            } else {
+                document.getElementById('phoneNumberAlert').innerText = "";
+            }
+
+            if (!valid) {
+                e.preventDefault(); // Prevent form submission if validation fails
+            }
+        });
+    </script>
+</body>
+</html>
