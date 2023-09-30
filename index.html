@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,11 +13,25 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background: linear-gradient(45deg, #00A8FF, #00F1FF, #00F1FF, #00A8FF);
+            background-size: 400% 400%;
+            animation: gradient 15s infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         header {
-            background-color: #007BFF;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
             color: #fff;
             text-align: center;
             padding: 20px 0;
@@ -29,21 +43,29 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            padding: 0 20px; /* Add padding to the container */
         }
 
         .card {
             background-color: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
             border-radius: 8px;
             margin: 10px;
             flex: 1;
             max-width: calc(33.33% - 20px); /* Updated width for three cards */
             overflow: hidden;
+            transition: transform 0.3s ease-in-out; /* Add a card animation */
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Enlarge the card on hover */
         }
 
         .card img {
             max-width: 100%;
             height: auto;
+            border: 6px solid #fff; /* Add a white border */
+            border-radius: 8px;
         }
 
         .card-content {
@@ -62,6 +84,9 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            background-color: #007BFF;
+            color: #fff;
+            transition: background-color 0.3s ease-in-out; /* Add button animation */
         }
 
         .card-buttons button a {
@@ -71,13 +96,22 @@
 
         .card-buttons button:first-child {
             margin-right: 10px;
-            background-color: #007BFF;
-            color: #fff;
         }
 
         .card-buttons button:last-child {
             background-color: #333;
-            color: #fff;
+        }
+
+        /* Responsive Styles for Mobile */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
