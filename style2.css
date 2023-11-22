@@ -1,0 +1,92 @@
+/* Your existing CSS styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+p {
+  color: #666;
+}
+
+.example {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.code-area {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  overflow-x: auto;
+}
+
+.run-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.run-button:hover {
+  background-color: #0056b3;
+}
+
+.output {
+  margin-top: 20px;
+}
+
+.console {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 6px;
+  height: 120px;
+  overflow-y: auto;
+}
+
+/* For all the HTML files */
+
+/* Your existing CSS styles */
+/* ... */
+
+/* Additional styles for responsiveness */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Example of making code-area responsive */
+.code-area {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+

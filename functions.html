@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Functions in JavaScript</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>Functions in JavaScript</h1>
+      <p>Functions are reusable blocks of code. They can take parameters, perform tasks, and return values. JavaScript functions are first-class citizens.</p>
+      
+      <div class="example">
+        <h2>Example</h2>
+        <textarea id="code-area" class="code-area" rows="6" cols="50">// Declare a simple function
+function greet(name) {
+  return 'Hello, ' + name + '!';
+}
+
+// Call the function and log the result
+console.log(greet('John'));
+console.log(greet('Alice'));
+        </textarea>
+        <button class="run-button" onclick="runCode('code-area')">Run Code</button>
+        <div class="output">
+          <h3>Console Output:</h3>
+          <div class="console"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="com.js"></script>
+</body>
+</html>
